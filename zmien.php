@@ -10,6 +10,9 @@ body {
 	background-size: cover;
 	
 	}
+    h2{
+        font-family: cursive;
+    }
 </style>
   <center>
   <?php

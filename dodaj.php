@@ -15,8 +15,14 @@ body {
 	background-size: cover;
 	}
 	h1 {
-	font-size: 190%;
+        color: black;
+        font-family: cursive;
+        font-size: 190%;
    }
+    h2 {
+        color: black;
+        font-family: cursive;
+    }
 </style>
 <center>
 

@@ -3,10 +3,12 @@
     <meta charset="UTF-8">
 </head>
 
-<body bgcolor="Silver">
-<div align="left">
+<body>
+<div align="middle">
     <style>
         h1 {
+            color: black;
+            font-family: cursive;
             font-size: 120%;
         }
     </style>
@@ -15,7 +17,7 @@
 
     if (isset($_SESSION['log'])==true)
     {
-        print "<h1> Witaj ".$_SESSION['imie']." na swoim koncie.</h1>";
+        print "<h1> Witaj ".$_SESSION['imie']." na swoim koncie :)</h1>";
     }
 
     if (isset($_SESSION['log'])==true)
@@ -32,6 +34,7 @@
     }
     else
     {
+        print "<h1>Aby dodawać wydarzenia musisz się zalogować lub zarejestrować</h1>";
         echo "<a href='logowanie.html'>Zaloguj się</a> <br><br>";
         echo "<a href='rejestracja.html'>Zarejestruj się</a> <br><br>";
     }
@@ -50,16 +53,19 @@
 
 
         h2   {
-            color: royalblue;
+            color: black;
+            font-family: cursive;
             font-fantasy: Trattatello;
             font-style: oblique;
             font-size: 320%;
         }
         h3   {
-            color: royalblue;
+            color: black;
+            font-family: cursive;
             font-fantasy: arial;
             font-style: oblique;
             font-size: 150%;
+           text-decoration: underline;
         }
 
     </style>

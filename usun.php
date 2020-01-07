@@ -8,8 +8,10 @@ body {
 	
 	background-image: url(tlo.jpg);
 	background-size: cover;
-	
 	}
+    h2{
+        font-family: cursive;
+    }
 </style>
   <center>
   <?php
