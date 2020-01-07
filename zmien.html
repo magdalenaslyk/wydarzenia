@@ -1,0 +1,26 @@
+<?php
+  session_start();
+	include("config.php");;
+	$login=$_SESSION['login']
+	
+	
+	$polaczenie = mysqli_connect($host, $user, $password);
+	mysqli_query($polaczenie, "SET CHARSET UTF-8");
+	mysqli_select_db($polaczenie, $database);
+	$wynik = mysqli_query($polaczenie, "SELECT * FROM wpis WHERE login='$login'");
+	mysqli_close($polaczenie);
+	$rek = mysqli_fetch_array($wynik);
+	$komentarz = $rek['wpis'];
+	$id = $rek['id'];
+	
+  ?>
+	  <form action="zmien.php" method="post">
+	  <textarea name="komentarz" cols="50" rows="10"><?php echo $komentarz?></textarea>
+	  <br>
+	  <input type="submit" value="Zmień post">
+	  <a href="index.php"><input type="button" value="Strona główna"></a>
+	<?php
+		print"<input type='hidden' name='id' value='$id'>";
+	  print"</form>";
+	  
+?>
