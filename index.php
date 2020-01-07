@@ -79,11 +79,12 @@
     $polaczenie = mysqli_connect($host, $user, $password);
     mysqli_query($polaczenie, "SET CHARSET UTF-8");
     mysqli_select_db($polaczenie, $database);
-    $wynik = mysqli_query($polaczenie, "SELECT * FROM user,wpis WHERE user.id=wpis. id_user");
+    $wynik = mysqli_query($polaczenie, "SELECT * FROM user,wpis,komentarze WHERE user.id=wpis. id_user AND user.id=komentarze. id_user");
     mysqli_close($polaczenie);
 
 
     print "<table border='0' width='800'>";
+    print "<table background=''>";
     print "<tr><td align='left'>";
     while ($rek = mysqli_fetch_array($wynik))
     {
@@ -100,9 +101,22 @@
         print "<br><br>";
         print 'Data dodania: ';
         print $rek["data"];
+        print "<br>";
+        print $rek["komentarz"];
+
+
+        if (isset($_SESSION['log'])==true)
+        {
+            print "<br><br><a href='dodajkomentarz.php'>Dodaj komentarz</a>";
+
+        }
+        else
+        {
+            print "";
+        }
+
         print "<br><hr>";
     }
-
     print "</table>";
 
     ?>

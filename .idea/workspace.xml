@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95fc4ea3-b7a3-4841-8293-0329fff5e0af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dodajkomentarz.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dodajkomentarz2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dodaj.php" beforeDir="false" afterPath="$PROJECT_DIR$/dodaj.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rejestracja.html" beforeDir="false" afterPath="$PROJECT_DIR$/rejestracja.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usun.php" beforeDir="false" afterPath="$PROJECT_DIR$/usun.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zmien.php" beforeDir="false" afterPath="$PROJECT_DIR$/zmien.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +53,7 @@
       <updated>1578079182094</updated>
       <workItem from="1578079183413" duration="937000" />
       <workItem from="1578138484931" duration="10669000" />
-      <workItem from="1578416475141" duration="5021000" />
+      <workItem from="1578416475141" duration="11580000" />
     </task>
     <servers />
   </component>

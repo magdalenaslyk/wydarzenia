@@ -49,6 +49,7 @@ body {
 			}
 			print "</table>";
 
+
   ?>
 	<a href="index.php">Strona główna</a><br><br>
 	<a href="wyloguj.php">Wyloguj się</a><br><br>
