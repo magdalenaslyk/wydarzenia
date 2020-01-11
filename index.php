@@ -50,7 +50,12 @@
             background-size: cover;
 
         }
+        h1 {
+            color: black;
+            font-family: cursive;
+            font-size: 100%;
 
+        }
 
         h2   {
             color: black;
@@ -72,14 +77,14 @@
 
     <h2>Zobacz jakie wydarzenia są w Twojej okolicy</h2>
     <img src="">
-    <h3>Wydarzenia:</h3>
+
 
     <?php
     include("config.php");
     $polaczenie = mysqli_connect($host, $user, $password);
     mysqli_query($polaczenie, "SET CHARSET UTF-8");
     mysqli_select_db($polaczenie, $database);
-    $wynik = mysqli_query($polaczenie, "SELECT * FROM user,wpis,komentarze WHERE user.id=wpis. id_user AND user.id=komentarze. id_user");
+    $wynik = mysqli_query($polaczenie, "SELECT * FROM user,wpis WHERE user.id=wpis. id_user");
     mysqli_close($polaczenie);
 
 
@@ -88,12 +93,12 @@
     print "<tr><td align='left'>";
     while ($rek = mysqli_fetch_array($wynik))
     {
+        print "<h3>".$rek["tytul"]."</h3>";
+        print "<h1>Miejsce: ".$rek["typ"]."</h1>";
+        print "<h1>Rodzaj: ".$rek["rodzaj"]."</h1>";
+        print "<h1>Data: ".$rek["time"]."</h1>";
+        print "<h1>Dodane przez: ".$rek["imie"]." ".$rek["nazwisko"]."</h1>";
         print "<br>";
-        print $rek["imie"];
-        print' ';
-        print $rek["nazwisko"];
-        print' dodał/ła wydarzenie: ';
-        print "<br><br>";
         print $rek["wpis"];
         print' ';
         print "<br><br>";
@@ -102,12 +107,11 @@
         print 'Data dodania: ';
         print $rek["data"];
         print "<br>";
-        print $rek["komentarz"];
 
 
         if (isset($_SESSION['log'])==true)
         {
-            print "<br><br><a href='dodajkomentarz.php'>Dodaj komentarz</a>";
+            print "<br><a href='dodajkomentarz.php'>Dodaj komentarz</a>";
 
         }
         else

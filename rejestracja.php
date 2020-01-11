@@ -32,20 +32,20 @@ body {
 					VALUES ('$imie','$nazwisko','$mail','$login','$haslo')");
 					echo "Konto zostało utworzone!<br><br>";
 					echo "<a href='logowanie.html'> Zalogu się</a><br><br>";
-					echo "<a href='index.php'>Przejdź do strony głównej</a>";
+					echo "<a href='index.php'>Strona główna</a>";
 				}
 			else 
 				{
 					echo "Hasła nie są takie same<br><br>";
-					echo "<a href='rejestracja.html'>Przejdź do rejestracji</a><br><br>";
-					echo "<a href='index.php'>Przejdź do strony głównej</a>";
+					echo "<a href='rejestracja.html'>Zarejestruj się</a><br><br>";
+					echo "<a href='index.php'>Strona główna</a>";
 				}
 		}
    else 
 		{
 			echo "Podany login jest już zajęty <br><br>";
-			echo "<a href='rejestracja.html'>Przejdź do rejestracji</a><br><br>";
-			echo "<a href='index.php'>Przejdź do strony głównej</a>";
+			echo "<a href='rejestracja.html'>Zarejestruj się</a><br><br>";
+			echo "<a href='index.php'>Strona główna</a>";
 		}
 
 ?>

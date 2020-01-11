@@ -44,7 +44,7 @@ error_reporting(0);
     </form><br>
 
 
-    <a href="index.php">Wróc na główną stronę</a>
+    <a href="index.php">Strona główna</a>
 
 
 

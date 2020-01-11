@@ -10,8 +10,12 @@ body {
 	
 	background-image: url(tlo.jpg);
 	background-size: cover;
-	
 	}
+    h1{
+        color: black;
+        font-family: cursive;
+        font-size: 100%;
+    }
 </style>
 <center>
 <?php
@@ -41,9 +45,9 @@ body {
 		}
 		else 
 		{
-			echo "<br><br>Niepoprawna nazwa użytkownika lub hasło :(</br><br>";
-			echo "<a href='logowanie.html'>Przejdź do logowania</a><br><br>";
-			echo "<a href='index.php'>Przejdź do strony głównej</a>";
+			echo "<br><br><h1>Niepoprawna nazwa użytkownika lub hasło :(</h1></br><br>";
+			echo "<a href='logowanie.html'>Zaloguj się</a><br><br>";
+			echo "<a href='index.php'>Strona główna</a>";
 		}
 	
 
