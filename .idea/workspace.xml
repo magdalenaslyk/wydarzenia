@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="PHPUnitRunConfigurationType" name="Test.testTrueAssetsToTrue" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="95fc4ea3-b7a3-4841-8293-0329fff5e0af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dodajkomentarz.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dodajkomentarz2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/strony.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.phar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/bin/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zmien.php" beforeDir="false" afterPath="$PROJECT_DIR$/zmien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wydarzenia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wydarzenia.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +32,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="wydarzenia" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1VtjFgAtiCnlegrT1zaNEt0heBr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,8 +84,49 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="PHPUnit.Test (1)">
+    <configuration name="Test (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/Test/strony.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test (2)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="UnitTestFiles\Test\Test" file="$PROJECT_DIR$/Test/strony.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test\Test\Test" file="$PROJECT_DIR$/Test/strony.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test.testTrueAssetsToTrue (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="UnitTestFiles\Test\Test" file="$PROJECT_DIR$/Test/strony.php" method="testTrueAssetsToTrue" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test.testTrueAssetsToTrue" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/Test/strony.php" method="testTrueAssetsToTrue" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue" />
+      <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue (1)" />
+      <item itemvalue="PHPUnit.Test (2)" />
+      <item itemvalue="PHPUnit.Test" />
+      <item itemvalue="PHPUnit.Test (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.Test (1)" />
+        <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue" />
+        <item itemvalue="PHPUnit.Test" />
+        <item itemvalue="PHPUnit.Test (2)" />
+        <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",Show Fields" />
+  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\monia\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +137,11 @@
       <updated>1578079182094</updated>
       <workItem from="1578079183413" duration="937000" />
       <workItem from="1578138484931" duration="10669000" />
-      <workItem from="1578416475141" duration="11580000" />
+      <workItem from="1578416475141" duration="11831000" />
+      <workItem from="1578565192147" duration="4134000" />
+      <workItem from="1578642446763" duration="1947000" />
+      <workItem from="1578744095877" duration="13517000" />
+      <workItem from="1579081795746" duration="14080000" />
     </task>
     <servers />
   </component>
@@ -65,7 +153,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
