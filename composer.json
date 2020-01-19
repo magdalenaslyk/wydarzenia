@@ -10,5 +10,6 @@
     }
   ],
   "require": {
+    "phpunit/phpunit-mock-objects": "6.1.2"
   }
 }
