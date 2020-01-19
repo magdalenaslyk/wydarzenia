@@ -6,14 +6,31 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95fc4ea3-b7a3-4841-8293-0329fff5e0af" name="Default Changelist" comment="" />
+    <list default="true" id="95fc4ea3-b7a3-4841-8293-0329fff5e0af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PHP/Class/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/Class/DBConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/Class/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/Class/Filter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/Class/ImgUpload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/Class/ToGo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/Class/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/addComment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/addEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/user_panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodajkomentarz.php" beforeDir="false" afterPath="$PROJECT_DIR$/dodajkomentarz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
@@ -50,8 +67,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schronisko" />
     <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\wydarzenia\PHP" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\wydarzenia" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -123,6 +148,8 @@
       <workItem from="1578642446763" duration="1947000" />
       <workItem from="1578744095877" duration="13517000" />
       <workItem from="1579081795746" duration="14323000" />
+      <workItem from="1579355547419" duration="7847000" />
+      <workItem from="1579367114722" duration="26648000" />
     </task>
     <task id="LOCAL-00001" summary="Dodanie prostego testu sprawdzającego poprawne działanie testowania.">
       <created>1579107963919</created>
