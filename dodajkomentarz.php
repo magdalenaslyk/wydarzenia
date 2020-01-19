@@ -28,19 +28,29 @@ error_reporting(0);
 
     <?php
     session_start();
+    $id_wpisu=$_GET['id'];
+    $id_user=$_GET['id_user'];
 
+    if(isset($_POST['submit'])){
+        extract($_POST);
+        $komentarz= isset($komentarz);
+        $polaczenie = mysqli_connect($host, $user, $password);
+        mysqli_select_db($polaczenie, wydarzenia);
+        mysqli_query($polaczenie, "INSERT INTO komentarze SET id_user='$id_user',id_wpis='$id_wpisu', komentarz='$komentarz' ");
+        header('location: index.php');
+    };
     if ((isset($_SESSION['log'])==true ))
     {
         print "<br><br><br><br><h1> Witaj ".$_SESSION['imie']." dodaj komentarz do wydarzenia :)</h1>";
     }
+
+
     ?>
-    <form action="dodajkomentarz2.php" method="POST" enctype="multipart/form-data"><br><br><br><br>
-        <h2>Treść komentarza:</h2><br><textarea name="komentarz" id="komentarz" cols="90" rows="30" required></textarea><br><br>
+    <form action="dodajkomentarz.php" method="POST" ><br><br><br><br>
+        <h2>Treść komentarza:</h2><br>
+        <textarea name="komentarz" id="komentarz" cols="90" rows="30" required></textarea><br><br>
 
-
-
-
-        <input type="submit" value="Dodaj komentarz">
+        <button type=\"submit\" name=\"submit\" >Dodaj komentarz</button>
     </form><br>
 
 

@@ -111,7 +111,7 @@
 
         if (isset($_SESSION['log'])==true)
         {
-            print "<br><a href='dodajkomentarz.php'>Dodaj komentarz</a>";
+            echo "<a href='\wydarzenia/dodajkomentarz.php?a=del&amp;id={$rek["id_wpis_w"]};id_user={$rek["id"]}'>Dodaj komentarz</a>";
 
         }
         else
