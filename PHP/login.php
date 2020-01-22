@@ -57,7 +57,8 @@ if (isset($_POST['submit'])) {
                     </div>
 
                     <button type="submit" name="submit" class="float-right btn btn-primary">Login</button>
-                    <a href="<?php print SITE_URL; ?>register.php">Zarejestruj się</a>
+                    <a href="<?php print SITE_URL; ?>register.php">Zarejestruj się</a><br>
+                    <a href="<?php print SITE_URL; ?>index.php">Przejdź na stronę gółwną</a>
                 </form>
             </div>
         </div>

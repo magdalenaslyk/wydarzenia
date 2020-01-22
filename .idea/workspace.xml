@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoTestManager">
-    <enabled-run-configurations>
-      <run-configuration type="PHPUnitRunConfigurationType" name="Test.testTrueAssetsToTrue" />
-    </enabled-run-configurations>
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="95fc4ea3-b7a3-4841-8293-0329fff5e0af" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/Class/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/Class/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/Class/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/Class/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/index.php" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/MyLib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/testy_strony.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/6996.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wydarzenia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wydarzenia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/strony.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodaj2.php" beforeDir="false" afterPath="$PROJECT_DIR$/dodaj2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wydarzenia.sql" beforeDir="false" afterPath="$PROJECT_DIR$/wydarzenia.sql" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +64,17 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VtjFgAtiCnlegrT1zaNEt0heBr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -78,41 +102,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.Test (1)">
-    <configuration name="Test (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Test" file="$PROJECT_DIR$/Test/strony.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test (2)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="UnitTestFiles\Test\Test" file="$PROJECT_DIR$/Test/strony.php" scope="Class" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.Test">
     <configuration name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Test\Test\Test" file="$PROJECT_DIR$/Test/strony.php" scope="Class" />
+      <TestRunner class="Test" file="$PROJECT_DIR$/PHP/testy_strony.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="Test.testTrueAssetsToTrue (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="UnitTestFiles\Test\Test" file="$PROJECT_DIR$/Test/strony.php" method="testTrueAssetsToTrue" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test.testTrueAssetsToTrue" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Test" file="$PROJECT_DIR$/Test/strony.php" method="testTrueAssetsToTrue" scope="Method" />
+    <configuration name="Test.testFirstTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/PHP/testy_strony.php" method="testFirstTest" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue" />
-      <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue (1)" />
-      <item itemvalue="PHPUnit.Test (2)" />
       <item itemvalue="PHPUnit.Test" />
-      <item itemvalue="PHPUnit.Test (1)" />
+      <item itemvalue="PHPUnit.Test.testFirstTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.Test (1)" />
-        <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue" />
         <item itemvalue="PHPUnit.Test" />
-        <item itemvalue="PHPUnit.Test (2)" />
-        <item itemvalue="PHPUnit.Test.testTrueAssetsToTrue (1)" />
+        <item itemvalue="PHPUnit.Test.testFirstTest" />
       </list>
     </recent_temporary>
   </component>
