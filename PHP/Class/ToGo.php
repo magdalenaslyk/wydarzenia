@@ -6,7 +6,7 @@ class ToGo
     private $_id;
     private $_id_event;
     private $_id_user;
-    private $_zdjecie;
+
 
     public function getDb()
     {
@@ -44,26 +44,6 @@ class ToGo
     public function setIdUser($id_user)
     {
         $this->_id_user = $id_user;
-    }
-
-    public function getStatus()
-    {
-        return $this->_status;
-    }
-
-    public function setStatus($status)
-    {
-        $this->_status = $status;
-    }
-
-    public function getZdjecie()
-    {
-        return $this->_zdjecie;
-    }
-
-    public function setZdjecie($zdjecie)
-    {
-        $this->_zdjecie = $zdjecie;
     }
 
     public function __construct()
@@ -106,16 +86,6 @@ class ToGo
         return $ret;
     }
 
-    public function getPathZdjecia(){
-        $query = "SELECT path_zdjecia FROM wpis WHERE id = ".$this->_id_event;
-        $result = $this->db->query($query) or die($this->db->error);
-        $user_data = $result->fetch_array(MYSQLI_ASSOC);
-        $count_row = $result->num_rows;
-
-        if($count_row == 1){
-            return $user_data["path_zdjecia"];
-        }
-    }
 
 
 

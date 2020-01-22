@@ -4,10 +4,10 @@ include "Class/Filter.php";
 include "Class/Comment.php";
 include "Class/DBConnection.php";
 include "Class/User.php";
+include "Class/ToGo.php";
 $filter = new Filter();
 $comment = new Comment();
 $event_display = $filter->getAllEvents();
-
 $user = new User();
 if(!empty($_SESSION['id'])){
     $uid = $_SESSION['id'];
@@ -93,13 +93,22 @@ $userInfo = $user->getUserInfo();
                             echo ' napisał:  ' . $value['komentarz'].' <br>';
                         };
                     };
+                    echo " <a href='addComment.php?id_wpis='" . $row['id_wpis_w'] . "'&id_user=' ". $userInfo['id'] ." '\>Dodaj komentarz</a>";
 
+                $ad = new Togo();
+                $ad->setIdUser($user->getId());
+                $ad->setIdEvent($row['id_wpis_w']);
+                $event = $ad->getUserToGo();
 
-                        echo ' <a href=\'addComment.php?id_wpis=' . $row["id_wpis_w"] . '&id_user=' . $userInfo["id"] . '\'>Dodaj komentarz</a>
+                    if($event[0]['id_event']==$row['id_wpis_w'] && $event[0]['id_user']==$userInfo['id']){
+                    echo "<br>Bierzesz już udział w tym wydarzeniu";
+                }
+                else{
+                      echo '   <br><a href=\'addTogo.php?id_wpis=' . $row["id_wpis_w"] . '&id_user=' . $userInfo["id"] . '\'>Dołącz do wydarzenia </a>
                                 <p>_____________________________________________________________</p>
                             </div> 
                         </div>';
-                    }
+                    }}
                 }
 
             ?>
